@@ -81,7 +81,7 @@ while True:
     cv2.rectangle(img, ((wcam//5)*3, 0), ((wcam//5)*4, wcam//10), (255, 0, 0), cv2.FILLED) # RED
     cv2.rectangle(img, ((wcam//5)*4, 0), ((wcam//5)*5, wcam//10), (255, 255, 255), cv2.FILLED) # WHITE
 
-    # img = cv2.addWeighted(img, 0.5, imgCanvas, 0.5, 0)
+    img = cv2.addWeighted(img, 0.5, imgCanvas, 0.5, 0)
     cv2.imshow("Painter", img)
     if cv2.waitKey(1) and 0xFF == ord('q'):
         break
